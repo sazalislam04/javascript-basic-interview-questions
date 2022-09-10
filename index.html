@@ -31,7 +31,9 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                # Difference Between undefined and null ?
+                <strong class="text-success"
+                  ># Difference Between undefined and null ?</strong
+                >
               </button>
             </h2>
             <div
@@ -71,8 +73,10 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                # Difference between double equal and triple equal in javascript
-                ?
+                <strong class="text-success"
+                  ># Difference between double equal and triple equal in
+                  javascript ?</strong
+                >
               </button>
             </h2>
             <div
@@ -109,7 +113,10 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+                <strong class="text-success"
+                  ># JavaScript Global, Function, and Block Scope |
+                  Explained</strong
+                >
               </button>
             </h2>
             <div
@@ -119,15 +126,58 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong
+                  >SCOPE: In Programming, the scope is defined as the
+                  accessibility of the variable. Or in more technical terms, it
+                  is the reference to the context of the code.
+                </strong>
+                <strong
+                  >In JavaScript there are three type of variable scope,
+                  namely:</strong
+                >
+                <br />
+                <b>1. Global Scope.</b> <br />
+                <b>2. Function Scope</b> <br />
+                <b>3. Block Scope</b>
+                <br />
+                <b class="text-danger">Global Scope:</b>
+                <br />
+                The variables defined outside of any <b>function</b> or
+                <b>curly</b> brackets are known as global variables and have
+                global scope. Global scope means that the variables can be
+                accessed fron any part of that program, any <b>function</b> or
+                <b>conditional state</b> can be access that variable. <br />
+                <small
+                  >Note: It is not a good practice to use global variables when
+                  they are not needed as every code block will have access to
+                  those variables.</small
+                >
+                <br />
+                <br />
+                <b class="text-danger">Local Scope:</b> <br />
+                If you were to define some variables inside
+                <b>curly brackets {}</b> or inside a
+                <b>specific function</b> then those variables are called local
+                variables. The local variables have a very confined(restricted)
+                scope whice is called the local scope But, with the release of
+                <b>ES6</b>, the local scope was further broken down into two
+                different scopes:
+                <br />
+                <li>Function Scope</li>
+                <li>Block Scope</li>
+                <br />
+                <b class="text-danger">Function Scope</b> <br />
+                JavaScript has function scope: Each function creates a new
+                scope. <br />
+                Variables defined inside a function are not accessible(visible)
+                from outside the function. <br />
+                <b class="text-danger">Block Scope</b> <br />
+                Block scope is also a sub-type of local scope. The block scope
+                can be defined as the scope of the variables inside the
+                <b>curly brackets {}</b>. Now, these curly brackets can be of
+                loops, or conditional statements, or something else. You are
+                only allowed to refer to these variables from within the
+                <b>curly brackets{}</b>.
               </div>
             </div>
           </div>
