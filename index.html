@@ -18,9 +18,10 @@
       <h1 class="text-primary">JavaScript Basic Interview Questions</h1>
     </header>
 
-    <main>
+    <main class="mb-5">
       <section class="container mt-5">
         <div class="accordion" id="accordionExample">
+          <!-- item 1 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button
@@ -43,10 +44,12 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>Undefined Vs Null:</strong> undefined is a variable that
-                refers to something that doesn't exit, and the variable isn't
-                define anything.... Example: [let x; console.log(x)] is
-                undefined because value is not define. <br />
+                <strong class="text-danger fs-4">Undefined Vs Null:</strong>
+                <br />
+                undefined is a variable that refers to something that doesn't
+                exit, and the variable isn't define anything.... Example: [let
+                x; console.log(x)] is undefined because value is not define.
+                <br />
                 <strong>Null</strong> is variable that is defined but is missing
                 a value; <strong>MORE..</strong> <br />
                 <b>Null:</b> It is a intentional absence of the value. It is one
@@ -63,6 +66,7 @@
               </div>
             </div>
           </div>
+          <!-- item 2 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
               <button
@@ -86,7 +90,10 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>Double Equal and Triple Equal:</strong>
+                <strong class="text-danger fs-4"
+                  >Double Equal and Triple Equal:</strong
+                >
+                <br />
                 <b>Double Equals</b> checks for value equality only. It
                 inherently does type coercion. This means that before checking
                 the values. it converts the type of the variables to match each
@@ -103,6 +110,7 @@
               </div>
             </div>
           </div>
+          <!-- item 3 -->
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button
@@ -126,11 +134,12 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong
-                  >SCOPE: In Programming, the scope is defined as the
-                  accessibility of the variable. Or in more technical terms, it
-                  is the reference to the context of the code.
-                </strong>
+                <strong class="text-danger fs-4">SCOPE:</strong><br />
+                <p>
+                  In Programming, the scope is defined as the accessibility of
+                  the variable. Or in more technical terms, it is the reference
+                  to the context of the code.
+                </p>
                 <strong
                   >In JavaScript there are three type of variable scope,
                   namely:</strong
@@ -177,7 +186,70 @@
                 <b>curly brackets {}</b>. Now, these curly brackets can be of
                 loops, or conditional statements, or something else. You are
                 only allowed to refer to these variables from within the
-                <b>curly brackets{}</b>.
+                <b>curly brackets{}</b>. <br />
+                <br />
+                <b class="text-danger">Lexical Scoping</b> <br />
+                When a function is defined in another function, the inner
+                function has access to the outer function’s variables. This
+                behavior is called lexical scoping.
+                <br />
+                However, the outer function does not have access to the inner
+                function’s variables.
+                <br />
+                <b class="text-primary"
+                  >To visualize how scopes work, you can imagine one-way glass.
+                  You can see the outside, but people from the outside cannot
+                  see you.</b
+                >
+              </div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong class="text-success"># Closures in JavasSript </strong>
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong class="text-danger fs-4">Closures:</strong> <br />
+                A <b>closure</b> is the combination of a function boundled
+                together (enclosed) with references to its surrounding state
+                (the <b>lexical environment</b>). In other words, a
+                <b>closure</b> gives you access to an outer function’s scope
+                from an inner function. In JavaScript, closures are created
+                every time a function is created, at function creating time.
+                <br />
+                <b>Lexical Scoping</b>
+                <br />
+                <b>Consider the following example code:</b> <br />
+                <p>
+                  function outerFunction() { <br />
+                  const outer = "I see the outer variable!!"; <br />
+                  return function innerFunction() { <br />
+                  console.log(outer); }; <br />
+                  } <br />
+                  outerFunction();
+                </p>
+                <br />
+                <p class="text-primary">
+                  If you define any inner function within another function, this
+                  inner function is called a closure. It retains access to the
+                  variables created in the outer function.
+                </p>
               </div>
             </div>
           </div>
